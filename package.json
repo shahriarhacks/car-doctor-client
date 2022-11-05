@@ -1,5 +1,5 @@
 {
-  "name": "car-client",
+  "name": "car-doctor-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,11 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layout/Root";
 import Home from "../pages/home/Home";
+import About from "../pages/shared/About";
+import Blog from "../pages/shared/Blog";
+import Contact from "../pages/shared/Contact";
+import ErrorPage from "../pages/shared/ErrorPage";
+import Services from "../pages/shared/Services";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -14,6 +20,22 @@ const routes = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

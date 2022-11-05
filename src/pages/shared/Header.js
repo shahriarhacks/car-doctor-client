@@ -5,18 +5,26 @@ import logo from "../../assets/logo.svg";
 const Header = () => {
   const menuItems = (
     <>
-      <li>
+      <li className="font-semibold">
         <NavLink to="/home">Home</NavLink>
+      </li>
+      <li className="font-semibold">
         <NavLink to="/about">About</NavLink>
+      </li>
+      <li className="font-semibold">
         <NavLink to="/services">Services</NavLink>
+      </li>
+      <li className="font-semibold">
         <NavLink to="/blog">Blog</NavLink>
+      </li>
+      <li className="font-semibold">
         <NavLink to="/contact">Contact</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar h-20 mb-12 bg-base-100">
+    <div className="navbar h-20 mb-12 pt-12 bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

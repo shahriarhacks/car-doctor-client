@@ -5,7 +5,7 @@ import About from "../pages/shared/About";
 import Blog from "../pages/shared/Blog";
 import Contact from "../pages/shared/Contact";
 import ErrorPage from "../pages/shared/ErrorPage";
-import Services from "../pages/shared/Services";
+import Services from "../pages/shared/Service";
 
 const routes = createBrowserRouter([
   {
